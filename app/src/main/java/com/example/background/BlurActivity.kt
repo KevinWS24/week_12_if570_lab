@@ -36,7 +36,9 @@ class BlurActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // Setup view output image file button
+        binding = ActivityBlurBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
         binding.seeFileButton.setOnClickListener {
             viewModel.outputUri?.let { currentUri ->
                 val actionView = Intent(Intent.ACTION_VIEW, currentUri)

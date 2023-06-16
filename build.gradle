@@ -19,7 +19,7 @@
 buildscript {
     ext.versions = [:]
     versions.compileSdk = 33
-    versions.minSdk = 16
+    versions.minSdk = 21
     versions.targetSdk = 34
     versions.kotlin = '1.6.10'
     versions.work = "2.7.1"
